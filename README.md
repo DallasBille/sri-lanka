@@ -1,5 +1,11 @@
 ## Getting Started
 
+## Live (takes a minute for heroku to spin up):
+
+[Heroku Live Version](https://sri-lanka.herokuapp.com/)
+
+## Locally
+
 1. Clone repo.
 2. cd sri-lanka.
 3. npm install.

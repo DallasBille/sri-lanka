@@ -27,10 +27,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.toggleFloodLayer}>Show Flood Mapping</button>
-        <button onClick={this.toggleHospitalLayer}>
-          Show Hospital Locations
-        </button>
+        <div className="button-div">
+          <button onClick={this.toggleFloodLayer}>Show Flood Mapping</button>
+          <button onClick={this.toggleHospitalLayer}>
+            Show Hospital Locations
+          </button>
+        </div>
         <InformationModal />
         <MapGL
           className="map"
