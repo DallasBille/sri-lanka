@@ -52,3 +52,11 @@ A high level idea that comes to mind is a combination of hospital locations, ext
 ## Conclusion:
 
 As usual I have had a blast developing with mapping software. And Mapbox as a tool is pretty incredible, and there are a ton of extremely thorough libraries that can be build on top the Mapbox API.
+
+https://www.worldbank.org/en/news/feature/2013/04/10/leveraging-technology-disaster-risk-management
+
+A real-time traffic map was generated and made available to the public (including via Google) using data gathered from moving vehicles;
+Observation data from flood sensors was distributed to car navigation systems and smartphones; and
+GPS data from mobile phones was used to reproduce and analyze the flow of people at the time of the earthquake.
+
+http://web.worldbank.org/WBSITE/EXTERNAL/TOPICS/EXTSDNET/0,,menuPK:64885113~pagePK:7278667~piPK:64911824~theSitePK:5929282~contentMDK:23285337,00.html

@@ -8,32 +8,47 @@ class InformationModal extends React.Component {
   };
 
   modalToggleState = () => {
-    console.log(this.state.modalToggle);
     this.setState({
       modalToggle: !this.state.modalToggle
     });
   };
 
+  dateFormatter = date => {
+    var stringDate = date.toString();
+    var year = stringDate.substring(0, 4);
+    var month = stringDate.substring(4, 6);
+    var day = stringDate.substring(6, 8);
+    const dateFormat = [day, month, year].join("/");
+    return dateFormat;
+  };
+
   loadFloodDetails = () => {
     const details = floodInfo[0];
-    console.log(details);
     return (
       <div>
         <h3>Flood Details</h3>
-        <p>Began: {details.Began}</p>
-        <p>Ended: {details.Ended}</p>
-        <p>Area Flooded: {details.areaFlooded}</p>
-        <p>Population Exposed: {details.popExposed}</p>
+        <p>
+          <u>Began:</u> {details.Began}
+        </p>
+        <p>
+          <u>Ended:</u> {details.Ended}
+        </p>
+        <p>
+          <u>Area Flooded:</u> {details.areaFlooded} Sq. Kilometers
+        </p>
+        <p>
+          <u>Population Exposed:</u> {details.popExposed} people
+        </p>
       </div>
     );
   };
   loadPrecipitationInfo = () => {
-    console.log(precipitationInfo);
     return precipitationInfo.map(info => {
       return (
         <div>
           <p key={info.date}>
-            Date: {info.date}, Precipitation: {info.precip}
+            <u>Date:</u> {this.dateFormatter(info.date)}, <u>Precipitation:</u>{" "}
+            {info.precip} Centimeters
           </p>
         </div>
       );
