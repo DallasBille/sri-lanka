@@ -6,7 +6,7 @@
   height: 40vmin;
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -15,10 +15,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #09d3ac;
+} */
+
+.app-div {
+  background-color: #4caf50;
 }
 
 #raster {
@@ -30,13 +34,9 @@
 }
 
 .info-button {
-  margin-right: 40px;
+  border: 2px solid #4caf50;
   z-index: 3;
-}
-
-button {
   background-color: #4caf50; /* Green */
-  border: none;
   color: black;
   padding: 15px 32px;
   text-align: center;
@@ -45,7 +45,8 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+.info-button:hover {
+  border: 2px solid black;
   cursor: pointer;
   background-color: white;
 }
