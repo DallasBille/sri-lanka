@@ -38,7 +38,7 @@ class App extends React.Component {
         <InformationModal />
         <MapGL
           className="map"
-          style={{ width: "100%", height: "500px" }}
+          style={{ width: "100%", height: "100vh" }}
           mapStyle="mapbox://styles/mapbox/outdoors-v9"
           accessToken="pk.eyJ1IjoiZGFsbGFzYmlsbGUiLCJhIjoiY2p6OHR1aGhoMDZnZDNjbXB2ZWZlcXFudCJ9.gjjYkOkTtA-Qe1jhbvF2gQ"
           onViewportChange={viewport => this.setState({ viewport })}
